@@ -8,7 +8,7 @@ template_folder = "templates"  # folder containing virender.png, vikram.png, etc
 
 # Digit positioning and spacing
 big_y = 1124
-big_date_x = 835
+big_date_x = 815
 big_time_x = 1018
 big_gap_default = 20
 big_gap_after_one = 15
@@ -17,7 +17,7 @@ big_gap_after_colon = 33
 
 small_y = 319
 small_date_x = 955
-small_time_x = 1050
+small_time_x = 1060
 small_size_default = (10, 16)
 small_size_one = (8, 16)
 small_gap_default = 11
