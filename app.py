@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from datetime import date
 import os
 
 # --- CONFIGURATION ---
@@ -91,7 +92,11 @@ template_options = [f for f in os.listdir(template_folder) if f.endswith(".png")
 template_name = st.selectbox("Choose Form Template", template_options)
 form_template_path = os.path.join(template_folder, template_name)
 
-input_date = st.text_input("Enter Date (yyyy-mm-dd)", "2115-12-23")
+# Auto-set today's date
+input_date = date.today().strftime("%Y-%m-%d")
+st.write(f"📅 Today's Date: {input_date}")
+
+# Let user input time
 input_time = st.text_input("Enter Time (HH:MM)", "16:21")
 
 if st.button("Generate M-Form"):
